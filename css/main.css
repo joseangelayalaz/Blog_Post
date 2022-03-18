@@ -151,11 +151,18 @@ nav .profile-link a {
     font-family: sans-serif;
 }
 .news-button button {
-    background-color: #47cfac;
+    background-color: rgb(230, 220, 207);
     width: 100px;
     height: 26px;
     border-radius: 3px;  
+    border: 2px solid #47cfac;
     font-size: 15px;
     font-weight: bold;  
     text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.news-button button:hover {
+    background-color: #47cfac;
+    color: white;
 }
