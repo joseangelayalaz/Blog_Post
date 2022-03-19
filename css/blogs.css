@@ -1,12 +1,6 @@
-/* le coloque position fixed para no tener ningun scroll */
 body {
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; 
 } 
 
 /* El display inline es para que la Redes se coloquen de manera horizontal  */
@@ -75,21 +69,6 @@ nav .profile-link a {
     border-bottom: 1px solid black;
 }
 
-.main-blog {
-    width: 100%;
-    height: 100%;
-    background-image: url(../assets/cover.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.main-blog .main-section-blog {
-    display: grid;
-    grid-template-rows: 150px 140px;
-    place-items: center;
-}
-
 .main-section-text {
     font-family: 'Roboto mono', monospace;
     font-size: 2.5rem;
@@ -138,9 +117,10 @@ nav .profile-link a {
 .news-parragraph {
     display: grid;
     place-content: center;
-    t
 }
+
 .news-parragraph .p-1 {
+    text-align: justify;
     font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
@@ -149,6 +129,7 @@ nav .profile-link a {
     font-size: 18px;
     font-weight: 500;
     font-family: sans-serif;
+    text-align: justify;
 }
 .news-button button {
     background-color: rgb(230, 220, 207);
@@ -165,4 +146,80 @@ nav .profile-link a {
 .news-button button:hover {
     background-color: #47cfac;
     color: white;
+}
+
+/* Second section, title and cards of news */
+
+.second-section-news {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.s-news-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.b-line {
+    border-bottom: 2px solid grey ;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-section-news .cards-news {
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: auto;
+    place-content: center;
+    column-gap: 30px;
+    row-gap: 40px;
+    margin-top: 20px;
+}
+
+.cards-news .cards-img {
+    width: 270px;
+    height: auto;
+    margin-top: 0;
+    object-fit: contain;
+    object-position: 60% 0%;
+}
+.cards-news .p-t {
+    font-family: serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 18px;
+}
+.cards-news .p-n {
+    font-family: serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 18px;
+}
+
+/* footer section */
+
+.footer-section1 {
+    width: 100%;
+    height: 50px;
+    background-color: #47cfac;
+}
+
+.footer-section2 {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(46, 45, 45);
+}
+.footer-section2 p {
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 21px;
 }
