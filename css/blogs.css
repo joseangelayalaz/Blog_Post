@@ -40,6 +40,8 @@ header .icons span {
     color: white;
 }
 
+/* Header del logo junto con link para mi perfil */
+
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,27 +71,7 @@ nav .profile-link a {
     border-bottom: 1px solid black;
 }
 
-.main-section-text {
-    font-family: 'Roboto mono', monospace;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    padding-top: 100px;
-}
-
-.main-section-button a button {
-    width: 80px;
-    height: 40px;
-    background-color: #47cfac;
-    font-weight: bold;
-    color: black;
-    font-size: 0.9rem;
-    margin-top: 40px;
-}
-.main-section-button a button:hover {
-    background-color: #7cdbc3;
-}
+/* First section of news */
 
 .main-section-news {
     display: grid;
@@ -184,17 +166,16 @@ nav .profile-link a {
     height: auto;
     margin-top: 0;
     object-fit: contain;
-    object-position: 60% 0%;
 }
 .cards-news .p-t {
-    font-family: serif;
+    font-family: sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-align: justify;
     line-height: 18px;
 }
 .cards-news .p-n {
-    font-family: serif;
+    font-family: sans-serif;
     font-size: 18px;
     font-weight: 500;
     text-align: justify;
